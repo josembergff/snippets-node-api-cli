@@ -2,11 +2,12 @@
   "name": "snippets-node-api-cli",
   "displayName": "Snippets para o node-api-cli",
   "description": "Snippets para o node-api-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "snippets-node-api-cli",
   "engines": {
     "vscode": "^1.20.0"
   },
+  "keywords": ["node-api-cli", "cli", "javascript", "snippets"],
   "categories": ["Snippets"],
   "contributes": {
     "snippets": [
