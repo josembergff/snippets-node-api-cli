@@ -1,21 +1,19 @@
 {
-    "name": "snippets-node-api-cli",
-    "displayName": "snippets-node-api-cli",
-    "description": "Snippets para o node-api-cli",
-    "version": "0.0.1",
-    "publisher": "snippets-node-api-cli",
-    "engines": {
-        "vscode": "^1.20.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+  "name": "snippets-node-api-cli",
+  "displayName": "snippets-node-api-cli",
+  "description": "Snippets para o node-api-cli",
+  "version": "0.0.1",
+  "publisher": "snippets-node-api-cli",
+  "engines": {
+    "vscode": "^1.20.0"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
 }
