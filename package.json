@@ -3,7 +3,7 @@
   "displayName": "Snippets para o node-api-cli",
   "description":
     "Snippets para criação de código de uma api em nodejs e para o auxilio do cliente de criação de projetos 'node-api-cli'",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "publisher": "snippets-node-api-cli",
   "engines": {
     "vscode": "^1.20.0"
