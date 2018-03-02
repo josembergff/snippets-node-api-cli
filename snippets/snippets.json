@@ -1,1 +1,46 @@
-{}
+{
+  "Modelo padrão para o Mongoose": {
+    "prefix": "mongooseModelo",
+    "body": [
+      "'use strict';",
+      "const mongoose = require('mongoose');",
+      "const Schema = mongoose.Schema;",
+      "",
+      "const schema = new Schema({",
+      "",
+      "});",
+      "",
+      "module.exports = mongoose.model('$1', schema);"
+    ],
+    "description": "Criado o modelo para o mongoose"
+  },
+  "Parametros padrões para o mongoose": {
+    "prefix": "mongooseModeloDadosPadrao",
+    "body": [
+      "criacao: {",
+      "type: Date,",
+      "required: true,",
+      "default: Date.now",
+      "},",
+      "edicao: {",
+      "type: Date,",
+      "required: false",
+      "},",
+      "criador: {",
+      "type: mongoose.Schema.Types.ObjectId,",
+      "ref: 'Usuario',",
+      "required: true",
+      "},",
+      "editor: {",
+      "type: mongoose.Schema.Types.ObjectId,",
+      "ref: 'Usuario'",
+      "}"
+    ],
+    "description": "Criado o modelo para o mongoose"
+  },
+  "Parametros padrão do mongoose": {
+    "prefix": "mongooseModeloNovoParametro",
+    "body": ["$1: {", "type: $2,", "required: $3", "},"],
+    "description": "Criado o modelo para o mongoose"
+  }
+}
