@@ -1,7 +1,8 @@
 {
   "name": "snippets-node-api-cli",
   "displayName": "Snippets para o node-api-cli",
-  "description": "Snippets para o node-api-cli",
+  "description":
+    "Snippets para criação de código de uma api em nodejs e para o auxilio do cliente de criação de projetos 'node-api-cli'",
   "version": "0.0.3",
   "publisher": "snippets-node-api-cli",
   "engines": {
