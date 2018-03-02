@@ -1,8 +1,8 @@
 {
   "name": "snippets-node-api-cli",
-  "displayName": "snippets-node-api-cli",
+  "displayName": "Snippets para o node-api-cli",
   "description": "Snippets para o node-api-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "snippets-node-api-cli",
   "engines": {
     "vscode": "^1.20.0"
@@ -12,7 +12,7 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/snippets-javascript.json"
       }
     ]
   }
