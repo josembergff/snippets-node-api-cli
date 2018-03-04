@@ -1,6 +1,6 @@
 {
   "Modelo padrão para o Mongoose": {
-    "prefix": "mongooseModelo",
+    "prefix": "snac-modelo-padraoMongoose",
     "body": [
       "'use strict';",
       "const mongoose = require('mongoose');",
@@ -15,7 +15,7 @@
     "description": "Criado o modelo para o mongoose"
   },
   "Parametros padrões para o mongoose": {
-    "prefix": "mongooseModeloDadosPadrao",
+    "prefix": "snac-modelo-parametrosPadraoMongoose",
     "body": [
       "criacao: {",
       "type: Date,",
@@ -39,8 +39,65 @@
     "description": "Criado o modelo para o mongoose"
   },
   "Parametros padrão do mongoose": {
-    "prefix": "mongooseModeloNovoParametro",
-    "body": ["$1: {", "type: $2,", "required: $3", "},"],
+    "prefix": "snac-modelo-novoParametroMongoose",
+    "body": [
+      "$1: {",
+      "type: $2,",
+      "required: $3",
+      "},"
+    ],
     "description": "Criado o modelo para o mongoose"
+  },
+  "Modelo padrão de respositório genérico": {
+    "prefix": "snac-repositorio-padraoMongoose",
+    "body": [
+      "'use strict';",
+      "const mongoose = require('mongoose');",
+      "let Modelo;",
+      "let nomeModelo;",
+      "",
+      "exports.modelo = (modelo) => {",
+      "Modelo = mongoose.model(modelo);",
+      "nomeModelo = modelo;",
+      "return Modelo;",
+      "};",
+      "",
+      "exports.criar = async (data) => {",
+      "var modelo = new Modelo(data);",
+      "await modelo.save();",
+      "return modelo.id;",
+      "}",
+      "",
+      "exports.buscarId = async (id) => {",
+      "const modelo = await Modelo.findById(id);",
+      "return modelo;",
+      "}",
+      "",
+      "exports.buscar = async (filtro) => {",
+      "const modelo = await Modelo.findOne(filtro);",
+      "return modelo;",
+      "}",
+      "",
+      "exports.editar = async (id, data) => {",
+      "return await Modelo.findByIdAndUpdate(id,",
+      "{",
+      "$set: data",
+      "});",
+      "}",
+      "",
+      "exports.excluir = async (id) => {",
+      "await Modelo.findOneAndRemove(id);",
+      "}",
+      "",
+      "exports.listagem = async (filtro, campos) => {",
+      "const lista = await Modelo.find(filtro, campos);",
+      "return lista;",
+      "}",
+      "",
+      "exports.quantidade = async (filtro) => {",
+      "const quantidade = await Modelo.count(filtro);",
+      "return quantidade;",
+      "}"
+    ]
   }
 }
