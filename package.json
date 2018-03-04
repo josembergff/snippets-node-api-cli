@@ -1,8 +1,8 @@
 {
   "name": "snippets-node-api-cli",
-  "displayName": "Snippets para o node-api-cli",
-  "description": "Snippets para criação de código de uma api em nodejs e para o auxilio do cliente de criação de projetos 'node-api-cli'",
-  "version": "0.0.5",
+  "displayName": "Snippets para a extensão geradora node-api-cli",
+  "description": "Snippets para criação de código de uma api em nodejs para o auxilio da extesnão geradora de criação de projetos 'node-api-cli'",
+  "version": "0.1.0",
   "publisher": "snippets-node-api-cli",
   "engines": {
     "vscode": "^1.20.0"
@@ -11,7 +11,10 @@
     "node-api-cli",
     "cli",
     "javascript",
-    "snippets"
+    "snippets",
+    "cli node",
+    "mvc node",
+    "api node"
   ],
   "categories": [
     "Snippets"
