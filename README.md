@@ -29,13 +29,16 @@ Segue abaixo todas a opções.
 
 Snippets para Javascript disponíveis
 ------------
-- 'snac-modelo-padraoMongoose' : cria um conteúdo padrão para modelo de dados para uso com o Mongoose.
-- Adicionado 'snac-modelo-parametrosPadraoMongoose':
-- Adicionado 'snac-modelo-novoParametroMongoose':
-- Adicionado 'snac-repositorio-padraoMongoose':
-- Adicionado 'snac-repositorio-novoComGenericoMongoose':
-- Adicionado 'snac-rota-padrao':
-- Adicionado 'snac-configuracao-modelo':
-- Adicionado 'snac-configuracao-rota':
-- Adicionado 'snac-configuracao-modeloERota':
-- Adicionado 'snac-controle-padrao':
+
+Digite uma das opções abaixo em um arquivo Javascript (extensão .js) e aperte "Tab" que será gerado o código conforme a descrição. 
+
+- `snac-modelo-padraoMongoose`: Cria um conteúdo padrão para modelo de dados para uso com o [Mongoose](http://mongoosejs.com/).
+- `snac-modelo-parametrosPadraoMongoose`: Cria um novos parâmetros padrões do modelo já criado utilizando o [Mongoose](http://mongoosejs.com/), como os campos de registro de usuário que criou e editou o modelo e as datas de criação e edição também.
+- `snac-modelo-novoParametroMongoose`: Cria um novo parâmetro no modelo já criado utilizando o [Mongoose](http://mongoosejs.com/).
+- `snac-repositorio-padraoMongoose`: Cria um repositório genérico para ser utilizado com modelos criados com o [Mongoose](http://mongoosejs.com/).
+- `snac-repositorio-novoComGenericoMongoose`: Cria um repositório com base no repositório genérico padrão do [node-api-cli](https://www.npmjs.com/package/node-api-cli).
+- `snac-rota-padrao`: Cria uma rota padrão nos padrões do [node-api-cli](https://www.npmjs.com/package/node-api-cli), que já adicionado os validador de acesso e registro de CRUD utilizados no [node-api-cli](https://www.npmjs.com/package/node-api-cli).
+- `snac-configuracao-modelo`: Adiciona no arquivo "config.js" do padrão [node-api-cli](https://www.npmjs.com/package/node-api-cli) uma referência de modelo ao projeto.
+- `snac-configuracao-rota`: Adiciona no arquivo "config.js" do padrão [node-api-cli](https://www.npmjs.com/package/node-api-cli) uma referência a rota do projeto.
+- `snac-configuracao-modeloERota`: Adiciona no arquivo "config.js" do padrão [node-api-cli](https://www.npmjs.com/package/node-api-cli) um modelo e rota de uma mesma entidade no projeto.
+- `snac-controle-padrao`: Cria um controle padrão do [node-api-cli](https://www.npmjs.com/package/node-api-cli), já adicionando uso ao repositório da entidade e ao repositório genérico do padrão do node-cli-api.
