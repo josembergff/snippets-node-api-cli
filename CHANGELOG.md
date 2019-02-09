@@ -1,11 +1,21 @@
-Change Log
-===
+# Change Log
 
-v0.1.1
----
+## v2.0.0
 
 <!-- ## :tada: Features -->
+
 ## Features
+
+- Atualizado a estrutura MVC
+- Atualizado para utilização de validações
+- Atualizado para utilização de multi linguagem
+
+## v0.1.1
+
+<!-- ## :tada: Features -->
+
+## Features
+
 - Adicionado `snac-modelo-padraoMongoose` para Javascript: Cria um conteúdo padrão para modelo de dados para uso com o [Mongoose](http://mongoosejs.com/).
 - Adicionado `snac-modelo-parametrosPadraoMongoose`: Cria um novos parâmetros padrões do modelo já criado utilizando o [Mongoose](http://mongoosejs.com/), como os campos de registro de usuário que criou e editou o modelo e as datas de criação e edição também.
 - Adicionado `snac-modelo-novoParametroMongoose`: Cria um novo parâmetro no modelo já criado utilizando o [Mongoose](http://mongoosejs.com/).
@@ -20,4 +30,5 @@ v0.1.1
 <!-- ## :hammer_and_wrench: Bugfixes -->
 
 ## Bugfixes
+
 Nenhum reportado até o momento.

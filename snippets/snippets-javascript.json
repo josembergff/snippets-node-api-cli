@@ -40,12 +40,7 @@
   },
   "Parametros padrão do mongoose": {
     "prefix": "snac-modelo-novoParametroMongoose",
-    "body": [
-      "$1: {",
-      "type: $2,",
-      "required: $3",
-      "},"
-    ],
+    "body": ["$1: {", "type: $2,", "required: $3", "},"],
     "description": "Criado o modelo para o mongoose"
   },
   "Repositório padrão genérico": {
@@ -138,27 +133,6 @@
       "router.get('/dados/combo', servicoAutenticacao.autorizar, controle.combo);",
       "",
       "module.exports = router;"
-    ]
-  },
-  "Configuração de modelo.": {
-    "prefix": "snac-configuracao-modelo",
-    "body": [
-      "const $1 = require('./modelos/$1');"
-    ]
-  },
-  "Configuração de rota.": {
-    "prefix": "snac-configuracao-rota",
-    "body": [
-      "const rota$1 = require('./rotas/rota-$1');",
-      "app.use('/$2', rota$1);"
-    ]
-  },
-  "Configuração de modelo e rota.": {
-    "prefix": "snac-configuracao-modeloERota",
-    "body": [
-      "const $1 = require('./modelos/$1');",
-      "const rota$1 = require('./rotas/rota-$1');",
-      "app.use('/$2', rota$1);"
     ]
   },
   "Controle padrão com base no respositório genérico.": {
